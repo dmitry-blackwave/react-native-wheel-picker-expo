@@ -224,7 +224,7 @@ const PickerItem = (
     <TouchableOpacity activeOpacity={1} onPress={() => onPress(index - 2)}>
       <View style={style}>
         {typeof renderItem === 'function' &&
-          renderItem({ fontSize, fontColor, label: item.label, textAlign })}
+          renderItem({ fontSize, fontColor, label: item.label, textAlign, selected: index === indexSelected })}
         {!renderItem && (
           <Item
             fontSize={fontSize}

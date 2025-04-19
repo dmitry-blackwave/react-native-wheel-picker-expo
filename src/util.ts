@@ -1,6 +1,10 @@
 export const setAlphaColor = (color: string, opacity: number = 1): string => {
   let newColor = color;
 
+  if (newColor === 'transparent') {
+    return newColor;
+  }
+
   if (!newColor.startsWith('#') || newColor.length !== 7) {
     console.warn('Make sure you set with full hex color value. Ex: #F00F00');
     newColor = '#FFFFFF';

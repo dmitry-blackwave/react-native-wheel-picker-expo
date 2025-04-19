@@ -6,6 +6,7 @@ export type RenderItemProps = {
   label: string;
   fontColor: string;
   textAlign: 'center' | 'auto' | 'left' | 'right' | 'justify';
+  selected: boolean;
 };
 
 export interface IViuPickerProps {
